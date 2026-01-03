@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet&Style</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body>
+    <header class="flex flex-row bg-amber-200 group">
+
+        <div class="dropdown group inline-block sm:hidden self-center ml-4 mr-auto text-xl">
+            <button class="bg-amber-600 active:bg-amber-400 text-white p-2">Nav</button>
+            <div class="cont hidden group-focus-within:block absolute shadow-[2px_2px_5px_black]">
+                <a href="#products" class="bg-amber-500 active:bg-amber-300 p-1 block">Produtos</a>
+                <a href="#deps" class="bg-amber-500 active:bg-amber-300 p-1 block">Depoimentos</a>
+                <a href="#contact" class="bg-amber-500 active:bg-amber-300 p-1 block">Contato</a>        
+            </div>
+        </div>
+
+        <img src="imgs/logo.png" alt="" class="m-2 h-[4rem] md:h-[3rem]">         
+        
+        <nav class="ml-4 hidden sm:flex gap-5 justify-end items-center text-md">
+            <a href="#products" class="bg-amber-500 hover:bg-amber-300 p-1">Produtos</a>
+            <a href="#deps" class="bg-amber-500 hover:bg-amber-300 p-1">Depoimentos</a>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-300 p-1">Contato</a>
+        </nav>
+    </header>
+
+        
+
+    <main>
+        <section class="hero"></section>
+        <section class="products" id="products"></section>
+        <section class="deps" id="deps"></section>
+        <section class="contact" id="contact">
+            <form class="contact__form">
+            <h4>Ficou interessado ? Envie uma mensagem agora !</h4>
+                <label class="contact__form-label" for="nome">Nome:</label>
+                <input class="contact__form-input" type="text" name="nome">
+                <label class="contact__form-label" for="email">E-mail:</label>
+                <input class="contact__form-input" type="email" name="email">
+                <label class="contact__form-label" for="msg">Mensagem:</label>
+                <textarea class="contact__form-ta" name="msg" id="" rows="10"></textarea>
+                
+                <button class="contact__form-button" type="submit">ENVIAR</button>
+        </form>
+        </section>        
+    </main>
+</body>
+</html>

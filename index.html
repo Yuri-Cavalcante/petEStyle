@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="src/output.css">
 </head>
 <body>
-    <header class="flex flex-row bg-amber-200 group">
+    <header class="flex flex-row sm:grid sm:grid-cols-[1fr_1fr_1fr] bg-amber-200 group">
 
         <div class="dropdown group inline-block sm:hidden self-center ml-4 mr-auto text-xl">
             <button class="bg-amber-600 active:bg-amber-400 text-white p-2">Nav</button>
@@ -20,14 +20,12 @@
 
         <img src="imgs/logo.png" alt="" class="m-2 h-[4rem] md:h-[3rem]">         
         
-        <nav class="ml-4 hidden sm:flex gap-5 justify-end items-center text-md">
-            <a href="#products" class="bg-amber-500 hover:bg-amber-300 p-1">Produtos</a>
-            <a href="#deps" class="bg-amber-500 hover:bg-amber-300 p-1">Depoimentos</a>
-            <a href="#contact" class="bg-amber-500 hover:bg-amber-300 p-1">Contato</a>
+        <nav class="hidden sm:flex sm:col-start-2 sm:col-end-3 gap-5 items-center text-md justify-center">
+            <a href="#products" class="bg-amber-500 hover:bg-amber-300 p-2 rounded-md">Produtos</a>
+            <a href="#deps" class="bg-amber-500 hover:bg-amber-300 p-2 rounded-md">Depoimentos</a>
+            <a href="#contact" class="bg-amber-500 hover:bg-amber-300 p-2 rounded-md">Contato</a>
         </nav>
     </header>
-
-        
 
     <main>
         <section class="hero"></section>

@@ -28,9 +28,78 @@
     </header>
 
     <main>
-        <section class="hero"></section>
-        <section class="products" id="products"></section>
-        <section class="deps" id="deps"></section>
+        <section class="hero py-8 flex justify-center items-center bg-amber-600">
+            <img src="imgs/logo.png" alt="" class="opacity-50">
+            <div class="w-screen absolute flex flex-col items-center gap-4 bg-[#edededb9]">
+                <h1 class="text-[4rem] text-white">Bem-vindo a Pet&Style</h1>
+                <p class="text-xl">A petshop que descobriu o enquilíbrio entre cuidado e estilo para pets</p>
+                <a href="#products" class="mb-5 p-2 text-[2rem] bg-amber-500 hover:bg-amber-300 rounded-md">VEJA AGORA</a>
+            </div>
+        </section>
+        <section class="products p-8 bg-amber-300" id="products">
+            <h1 class="mb-4 text-[3rem]">Produtos</h1>
+            <p class="mb-4">Alguns dos produtos que temos disponíveis</p>
+            <div class="container-cards flex gap-8 justify-center">
+                <div class="card w-fit bg-amber-200 rounded-xl">
+                    <img src="imgs/logo.png" alt="" class="w-[275px] h-[225px] rounded-xl">
+                    <div class="p-3">
+                        <h1>Produto</h1>
+                        <p>desc.</p>
+                    </div>
+                </div>
+
+                <div class="card w-fit bg-amber-200 rounded-xl">
+                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] rounded-xl">
+                    <div class="p-3">
+                        <h1>Produto</h1>
+                        <p>desc.</p>
+                    </div>
+                </div>
+
+                <div class="card w-fit bg-amber-200 rounded-xl">
+                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] rounded-xl">
+                    <div class="p-3">
+                        <h1>Produto</h1>
+                        <p>desc.</p>
+                    </div>
+                </div>
+
+                <div class="card w-fit bg-amber-200 rounded-xl">
+                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] rounded-xl">
+                    <div class="p-3">
+                        <h1>Produto</h1>
+                        <p>desc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="deps p-8 flex bg-amber-600" id="deps">
+            <div class="deps-text flex flex-col justify-center gap-5">
+                <h1 class="text-[3rem]">Depoimentos</h1>
+                <p class="text-[1.25rem]">Aqui estão os depoimentos de alguns clientes que provaram da experiência Pet&Style</p>
+            </div>
+            <div class="deps-container grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr] ">
+                <div class="dep-1 col-start-1 col-end-3 bg-amber-300">
+                    <h1>Cliente</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                </div>
+
+                <div class="dep-2 bg-amber-200">
+                    <h1>Cliente</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                </div>
+
+                <div class="dep-3 bg-amber-200">
+                    <h1>Cliente</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                </div>
+
+                <div class="dep-4 col-start-2 col-end-4 bg-amber-300">
+                    <h1>Cliente</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                </div>
+            </div>
+        </section>
         <section class="contact" id="contact">
             <form class="contact__form">
             <h4>Ficou interessado ? Envie uma mensagem agora !</h4>

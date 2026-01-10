@@ -1,1 +1,37 @@
 @import "tailwindcss";
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+.deps > * {
+    z-index: 1;
+}
+
+.deps::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/imgs/fundo_1.png');
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: 120% 50%;
+    opacity: 0.5; 
+    z-index: 0;
+}
+
+.contact > *{
+    z-index: 1;
+}
+
+.contact::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('/imgs/fundo_2.png');
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: 10% center;
+    opacity: 0.5; 
+    z-index: 0;
+}

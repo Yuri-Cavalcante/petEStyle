@@ -13,6 +13,7 @@
     --color-amber-500: oklch(76.9% 0.188 70.08);
     --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-700: oklch(55.5% 0.163 48.998);
+    --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-xl: 1.25rem;
@@ -178,6 +179,9 @@
   .relative {
     position: relative;
   }
+  .z-\[1\] {
+    z-index: 1;
+  }
   .col-start-1 {
     grid-column-start: 1;
   }
@@ -211,9 +215,6 @@
   .flex {
     display: flex;
   }
-  .grid {
-    display: grid;
-  }
   .hidden {
     display: none;
   }
@@ -225,6 +226,9 @@
   }
   .h-\[4rem\] {
     height: 4rem;
+  }
+  .h-\[11rem\] {
+    height: 11rem;
   }
   .h-\[225px\] {
     height: 225px;
@@ -247,14 +251,11 @@
   .resize {
     resize: both;
   }
-  .grid-cols-\[1fr_1fr_1fr\] {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-  .grid-rows-\[1fr_1fr\] {
-    grid-template-rows: 1fr 1fr;
-  }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-col-reverse {
+    flex-direction: column-reverse;
   }
   .flex-row {
     flex-direction: row;
@@ -264,6 +265,9 @@
   }
   .justify-center {
     justify-content: center;
+  }
+  .gap-2 {
+    gap: calc(var(--spacing) * 2);
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
@@ -320,6 +324,12 @@
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+  .px-8 {
+    padding-inline: calc(var(--spacing) * 8);
+  }
+  .py-4 {
+    padding-block: calc(var(--spacing) * 4);
+  }
   .py-8 {
     padding-block: calc(var(--spacing) * 8);
   }
@@ -330,11 +340,8 @@
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
   }
-  .text-\[1\.4rem\] {
-    font-size: 1.4rem;
-  }
-  .text-\[1\.5rem\] {
-    font-size: 1.5rem;
+  .text-\[1\.2rem\] {
+    font-size: 1.2rem;
   }
   .text-\[1\.25rem\] {
     font-size: 1.25rem;
@@ -342,17 +349,17 @@
   .text-\[1rem\] {
     font-size: 1rem;
   }
+  .text-\[2\.5rem\] {
+    font-size: 2.5rem;
+  }
+  .text-\[2\.25rem\] {
+    font-size: 2.25rem;
+  }
   .text-\[2rem\] {
     font-size: 2rem;
   }
-  .text-\[3rem\] {
-    font-size: 3rem;
-  }
-  .text-\[4rem\] {
-    font-size: 4rem;
-  }
-  .text-\[1\.4ren\] {
-    color: 1.4ren;
+  .text-black {
+    color: var(--color-black);
   }
   .text-white {
     color: var(--color-white);
@@ -432,9 +439,65 @@
       display: none;
     }
   }
+  .sm\:h-100 {
+    @media (width >= 40rem) {
+      height: calc(var(--spacing) * 100);
+    }
+  }
   .sm\:grid-cols-\[1fr_1fr_1fr\] {
     @media (width >= 40rem) {
       grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  .sm\:grid-rows-\[1fr_1fr\] {
+    @media (width >= 40rem) {
+      grid-template-rows: 1fr 1fr;
+    }
+  }
+  .sm\:flex-row {
+    @media (width >= 40rem) {
+      flex-direction: row;
+    }
+  }
+  .sm\:gap-4 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 4);
+    }
+  }
+  .sm\:gap-8 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
+    }
+  }
+  .sm\:text-xl {
+    @media (width >= 40rem) {
+      font-size: var(--text-xl);
+      line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .sm\:text-\[1\.4rem\] {
+    @media (width >= 40rem) {
+      font-size: 1.4rem;
+    }
+  }
+  .sm\:text-\[2rem\] {
+    @media (width >= 40rem) {
+      font-size: 2rem;
+    }
+  }
+  .sm\:text-\[3rem\] {
+    @media (width >= 40rem) {
+      font-size: 3rem;
+    }
+  }
+  .sm\:text-\[4rem\] {
+    @media (width >= 40rem) {
+      font-size: 4rem;
     }
   }
   .md\:h-\[3rem\] {
@@ -460,6 +523,12 @@ body, html {
   opacity: 0.5;
   z-index: 0;
 }
+@media (max-width:639px) {
+  .deps::before {
+    background-size: 65%;
+    background-position: 50% 2%;
+  }
+}
 .contact > * {
   z-index: 1;
 }
@@ -473,6 +542,12 @@ body, html {
   background-position: 10% center;
   opacity: 0.5;
   z-index: 0;
+}
+@media (max-width:639px) {
+  .contact::before {
+    background-size: 65%;
+    background-position: 50% -15%;
+  }
 }
 @property --tw-border-style {
   syntax: "*";

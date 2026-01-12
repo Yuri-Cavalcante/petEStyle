@@ -8,10 +8,9 @@
 </head>
 <body>
     <header class="flex flex-row sm:grid sm:grid-cols-[1fr_1fr_1fr] bg-amber-200 group">
-
         <div class="dropdown group inline-block sm:hidden self-center ml-4 mr-auto text-xl">
             <button class="bg-amber-600 active:bg-amber-400 text-white p-2">Nav</button>
-            <div class="cont hidden group-focus-within:block absolute shadow-[2px_2px_5px_black]">
+            <div class="cont hidden group-focus-within:block absolute shadow-[2px_2px_5px_black] z-[1]">
                 <a href="#products" class="bg-amber-500 active:bg-amber-300 p-1 block">Produtos</a>
                 <a href="#deps" class="bg-amber-500 active:bg-amber-300 p-1 block">Depoimentos</a>
                 <a href="#contact" class="bg-amber-500 active:bg-amber-300 p-1 block">Contato</a>        
@@ -29,17 +28,17 @@
 
     <main>
         <section class="hero py-8 flex justify-center items-center bg-amber-600">
-            <img src="imgs/logo.png" alt="" class="opacity-50">
-            <div class="w-full absolute flex flex-col items-center gap-4 bg-[#edededb9]">
-                <h1 class="text-[4rem] text-white">Bem-vindo a Pet&Style</h1>
-                <p class="text-xl">A petshop que descobriu o enquilíbrio entre cuidado e estilo para pets</p>
-                <a href="#products" class="mb-5 p-2 text-[2rem] bg-amber-500 hover:bg-amber-300 rounded-md">VEJA AGORA</a>
+            <img src="imgs/logo.png" alt="" class="h-[11rem] sm:h-100 opacity-50">
+            <div class="w-full absolute flex flex-col items-center gap-2 sm:gap-4 bg-[#edededb9]">
+                <h1 class="text-[2.25rem] sm:text-[4rem] text-black">Bem-vindo a Pet&Style</h1>
+                <p class="text-center text-[1rem] sm:text-xl">A petshop que descobriu o enquilíbrio entre cuidado e estilo para pets</p>
+                <a href="#products" class="mb-5 p-2 text-[1.2rem] sm:text-[2rem] bg-amber-500 hover:bg-amber-300 rounded-md">VEJA AGORA</a>
             </div>
         </section>
-        <section class="products p-8 flex flex-col items-center bg-amber-300" id="products">
-            <h1 class="mb-4 text-[3rem]">Produtos</h1>
-            <p class="mb-4">Alguns dos produtos que temos disponíveis</p>
-            <div class="container-cards flex gap-8 justify-center">
+        <section class="products px-8 py-4 sm:p-8 flex flex-col items-center bg-amber-300" id="products">
+            <h1 class="mb-4 text-[2.5rem]">Produtos</h1>
+            <p class="mb-4 text-center text-[1.25rem]">Alguns dos produtos que temos disponíveis, nos dedicamos a ter um varidade de artigos de alto estilo.</p>
+            <div class="container-cards flex flex-col sm:flex-row gap-8 justify-center">
                 <div class="card w-fit bg-amber-200 rounded-xl">
                     <img src="imgs/logo.png" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
                     <div class="p-3">
@@ -73,36 +72,35 @@
                 </div>
             </div>
         </section>
-        <section class="deps p-8 relative flex gap-10 bg-amber-600" id="deps">
-            
-            <div class="deps-container grid grid-cols-[1fr_1fr_1fr] grid-rows-[1fr_1fr] gap-8">
-                <div class="dep-1 p-4 col-start-1 col-end-3 text-[1.4rem] bg-amber-300 rounded-md">
+        <section class="deps p-8 relative flex flex-col-reverse sm:flex-row gap-10 bg-position-[0% 0%] bg-amber-600" id="deps">
+            <div class="deps-container flex flex-col sm:grid sm:grid-cols-[1fr_1fr_1fr] sm:grid-rows-[1fr_1fr] gap-8">
+                <div class="dep-1 p-4 col-start-1 col-end-3 text-[1.25rem] sm:text-[1.4rem] bg-amber-300 rounded-md">
+                    <h1>Carlos Magno</h1>
+                    <p>Sempre quis uma loja que tivesse produtos diferentes para meus pets, na Pet&Style consegui realizar esse dejeso</p>
+                </div>
+
+                <div class="dep-2 p-4 bg-amber-200 rounded-md text-[1.25rem]">
                     <h1>Cliente</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
                 </div>
 
-                <div class="dep-2 p-4 bg-amber-200 rounded-md">
+                <div class="dep-3 p-4 bg-amber-200 rounded-md text-[1.25rem]">
                     <h1>Cliente</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
                 </div>
 
-                <div class="dep-3 p-4 bg-amber-200 rounded-md">
-                    <h1>Cliente</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
-                </div>
-
-                <div class="dep-4 p-4 col-start-2 col-end-4 bg-amber-300 text-[1.4rem] rounded-md">
+                <div class="dep-4 p-4 col-start-2 col-end-4 bg-amber-300 text-[1.25rem] sm:text-[1.4rem] rounded-md">
                     <h1>Cliente</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
                 </div>
             </div>
             <div class="deps-text flex flex-col justify-center gap-5">
-                <h1 class="text-[3rem]">Depoimentos</h1>
+                <h1 class="text-[2rem] sm:text-[3rem]">Depoimentos</h1>
                 <p class="text-[1.25rem]">Aqui estão os depoimentos de alguns clientes que provaram da experiência Pet&Style</p>
             </div>
         </section>
-        <section class="contact p-8 relative flex gap-8 items-center bg-amber-300" id="contact">
-            <h4 class="text-[2rem] w-[50vw] text-center">Ficou interessado em nossos produtos ? Envie uma mensagem agora !</h4>            
+        <section class="contact p-4 sm:p-8 relative flex flex-col sm:flex-row gap-4 sm:gap-8 items-center bg-amber-300" id="contact">
+            <h4 class="text-[1.25rem] sm:text-[2rem] w-[50vw] text-center">Ficou interessado em nossos produtos ? Envie uma mensagem agora !</h4>            
             <form class="w-[50vw] flex flex-col">
                 <label class="" for="nome">Nome:</label>
                 <input class="mb-4 bg-amber-200 rounded-md" type="text" name="nome">

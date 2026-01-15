@@ -9,7 +9,7 @@
 <body>
     <header class="flex flex-row sm:grid sm:grid-cols-[1fr_1fr_1fr] bg-amber-200 group">
         <div class="dropdown group inline-block sm:hidden self-center ml-4 mr-auto text-xl">
-            <button class="bg-amber-600 active:bg-amber-400 text-white p-2">Nav</button>
+            <button class="bg-amber-600 active:bg-amber-400 text-white p-2">Menu</button>
             <div class="cont hidden group-focus-within:block absolute shadow-[2px_2px_5px_black] z-[1]">
                 <a href="#products" class="bg-amber-500 active:bg-amber-300 p-1 block">Produtos</a>
                 <a href="#deps" class="bg-amber-500 active:bg-amber-300 p-1 block">Depoimentos</a>
@@ -38,60 +38,60 @@
         <section class="products px-8 py-4 sm:p-8 flex flex-col items-center bg-amber-300" id="products">
             <h1 class="mb-4 text-[2.5rem]">Produtos</h1>
             <p class="mb-4 text-center text-[1.25rem]">Alguns dos produtos que temos disponíveis, nos dedicamos a ter um varidade de artigos de alto estilo.</p>
-            <div class="container-cards flex flex-col sm:flex-row gap-8 justify-center">
-                <div class="card w-fit bg-amber-200 rounded-xl">
-                    <img src="imgs/logo.png" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
+            <div class="container-cards flex flex-col sm:flex-row sm:flex-wrap gap-4 justify-center">
+                <div class="card w-[275px] bg-amber-200 rounded-xl">
+                    <img src="imgs/cama.png" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
                     <div class="p-3">
-                        <h1>Produto</h1>
-                        <p>desc.</p>
+                        <h1 class="text-[1.4rem]">Camas</h1>
+                        <p>Caminhas para seu pet dormir com conforto e estilo.</p>
                     </div>
                 </div>
 
-                <div class="card w-fit bg-amber-200 rounded-xl">
-                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
+                <div class="card w-[275px] bg-amber-200 rounded-xl">
+                    <img src="imgs/coleiras.jpg" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
                     <div class="p-3">
-                        <h1>Produto</h1>
-                        <p>desc.</p>
+                        <h1 class="text-[1.4rem]">Coleiras</h1>
+                        <p>Coleiras para um passeio, caminhada ou simplesmente por beleza.</p>
                     </div>
                 </div>
 
-                <div class="card w-fit bg-amber-200 rounded-xl">
-                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
+                <div class="card w-[275px] bg-amber-200 rounded-xl">
+                    <img src="imgs/roupa.jpg" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
                     <div class="p-3">
-                        <h1>Produto</h1>
-                        <p>desc.</p>
+                        <h1 class="text-[1.4rem]">Roupas</h1>
+                        <p>Roupas para expressar a personalidade do seu pet.</p>
                     </div>
                 </div>
 
-                <div class="card w-fit bg-amber-200 rounded-xl">
-                    <img src="https://placehold.co/275x225" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
+                <div class="card w-[275px] bg-amber-200 rounded-xl">
+                    <img src="imgs/tinta.jpg" alt="" class="w-[275px] h-[225px] p-2 rounded-xl">
                     <div class="p-3">
-                        <h1>Produto</h1>
-                        <p>desc.</p>
+                        <h1 class="text-[1.4rem]">Tintura para pelos</h1>
+                        <p>Um pouco de cor para dar vida e alegria.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="deps p-8 relative flex flex-col-reverse sm:flex-row gap-10 bg-position-[0% 0%] bg-amber-600" id="deps">
-            <div class="deps-container flex flex-col sm:grid sm:grid-cols-[1fr_1fr_1fr] sm:grid-rows-[1fr_1fr] gap-8">
-                <div class="dep-1 p-4 col-start-1 col-end-3 text-[1.25rem] sm:text-[1.4rem] bg-amber-300 rounded-md">
-                    <h1>Carlos Magno</h1>
-                    <p>Sempre quis uma loja que tivesse produtos diferentes para meus pets, na Pet&Style consegui realizar esse dejeso</p>
+            <div class="deps-container flex flex-col lg:grid lg:grid-cols-[1fr_1fr_1fr] lg:grid-rows-[1fr_1fr] gap-8">
+                <div class="dep-1 p-4 col-start-1 col-end-3 content-center text-[1.25rem] sm:text-[1.4rem] bg-amber-300 rounded-md">
+                    <h1 class='text-[1.40rem]'>Marco Aurélio</h1>
+                    <p>A loja tem uma grande variedade de produtos para cães e gatos. Encontrei tudo o que precisava em um só lugar. Os preços são justos e o ambiente é organizado. Só acho que poderia ter mais opções de marcas importadas, mas no geral é muito boa.</p>
                 </div>
 
-                <div class="dep-2 p-4 bg-amber-200 rounded-md text-[1.25rem]">
-                    <h1>Cliente</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                <div class="dep-2 p-4 content-center bg-amber-200 rounded-md text-[1.25rem] lg:text-[1rem]">
+                    <h1 class='text-[1.40rem]'>Carlos Magno</h1>
+                    <p>Sempre quis uma loja que tivesse produtos diferentes para meus pets, na Pet&Style consegui realizar esse dejeso, eles tem uma ótima variedade artigos.</p>
                 </div>
 
-                <div class="dep-3 p-4 bg-amber-200 rounded-md text-[1.25rem]">
-                    <h1>Cliente</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                <div class="dep-3 p-4 content-center bg-amber-200 rounded-md text-[1.25rem] lg:text-[1rem]">
+                    <h1 class='text-[1.40rem]'>Júlio César</h1>
+                    <p>Compro nessa loja há meses e nunca me decepcionei. Os produtos são de ótima qualidade, meu cachorro adorou a ração e os brinquedos são bem resistentes. O atendimento é muito atencioso e sempre tiram minhas dúvidas. Recomendo demais!</p>
                 </div>
 
-                <div class="dep-4 p-4 col-start-2 col-end-4 bg-amber-300 text-[1.25rem] sm:text-[1.4rem] rounded-md">
-                    <h1>Cliente</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quasi consequatur asperiores repellendus repellat aspernatur eligendi inventore. Tempore modi natus sit explicabo doloribus aut et, officia molestiae expedita distinctio vitae?</p>
+                <div class="dep-4 p-4 content-center col-start-2 col-end-4 bg-amber-300 text-[1.25rem] sm:text-[1.4rem] rounded-md">
+                    <h1 class='text-[1.40rem]'>Alexandre Magno</h1>
+                    <p>Atendimento rápido, funcionários educados e sempre dispostos a ajudar. Dá pra perceber que eles realmente gostam de animais. Minha gata ficou muito mais saudável depois que comecei a comprar os produtos indicados pela equipe. Virei cliente fiel!</p>
                 </div>
             </div>
             <div class="deps-text flex flex-col justify-center gap-5">
@@ -100,7 +100,14 @@
             </div>
         </section>
         <section class="contact p-4 sm:p-8 relative flex flex-col sm:flex-row gap-4 sm:gap-8 items-center bg-amber-300" id="contact">
-            <h4 class="text-[1.25rem] sm:text-[2rem] w-[50vw] text-center">Ficou interessado em nossos produtos ? Envie uma mensagem agora !</h4>            
+             
+            <div class="flex flex-col items-center">
+                <h4 class="mb-[1.5rem] text-[1.25rem] sm:text-[1.75rem] w-[50vw]">Ficou interessado em nossos produtos ? Envie uma mensagem agora !</h4>
+                <p class="text-[1.25rem] sm:text-[1.50rem]">Endereço: Avenida Isabel - quadra 12 lote 4</p>
+                <p class="text-[1.25rem] sm:text-[1.50rem]">Telefone: 14 98275-4031</p>
+                <p class="text-[1.25rem] sm:text-[1.50rem]">E-mail: Pet&Style12@gmail.com</p>                
+                <p class="text-[1.25rem] sm:text-[1.50rem]">Instagram: @Pet_&_Style</p>
+            </div>           
             <form class="w-[50vw] flex flex-col">
                 <label class="" for="nome">Nome:</label>
                 <input class="mb-4 bg-amber-200 rounded-md" type="text" name="nome">
